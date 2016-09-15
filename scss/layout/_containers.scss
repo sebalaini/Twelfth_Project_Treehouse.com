@@ -1,0 +1,64 @@
+/***************
+ABOUT
+***************/
+
+h3 {
+	text-align: center;
+}
+
+
+
+/***************
+PORTFOLIO
+***************/
+
+.gallery li {
+	height: 460px;
+	width: 98%;
+ 	margin: 5px auto;
+ 	text-align: center;
+}
+
+.gallery li:last-child {
+	margin-bottom: 20px;
+}
+
+img.project {
+	clear: both;
+	width: 290px;
+	height: 290px;
+	margin-bottom: 10px;
+}
+
+.gallery {
+ 	padding: 0;
+ 	list-style: none;
+}
+
+.gallery li p {
+ 	margin: 0;
+ 	padding: 0;
+}
+
+.gallery h2 {
+	margin-bottom: 10px;
+}
+
+
+
+/***************
+CONTACT
+***************/
+
+#contact h2 {
+ 	margin: 20px auto;
+}
+
+p.contact {
+	margin: 0 30px;
+}
+
+
+
+
+
