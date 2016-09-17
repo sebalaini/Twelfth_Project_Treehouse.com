@@ -7,14 +7,23 @@ GENERAL
 }
 
 .wrapper {
-  margin: 0 auto;
+  margin: 5px auto;
   max-width: 1200px;
+}
+
+div {
+  margin: 5px auto;
+  width: 100%;
+  text-align: center;
 }
 
 p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
   font-weight: normal;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px 5%;
 }
 
 a {
@@ -29,14 +38,9 @@ ul {
 
 .screenshot {
   margin: 5px auto;
-  max-width: 500px;
-  height: 150px;
-}
-
-.img_div {
-  margin: 0 auto;
   width: 100%;
-  text-align: center;
+  height: 150px;
+  margin-bottom: -10px;
 }
 
 
@@ -46,16 +50,17 @@ BODY
 ***************/
 
 h2 {
- text-align: center;
-padding: 5px 0;
+  text-align: center;
+  margin: 5px auto;
+  padding: 5px 0;
 }
 
 
 
 .clearfix:after {
-   content: "";
-   display: table;
-   clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
