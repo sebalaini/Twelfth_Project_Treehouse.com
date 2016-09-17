@@ -1,5 +1,19 @@
 $(document).ready(function(){
 
+/***************
+MENU BTN
+***************/
+
+$("#menu").click(function() {
+	$( ".nav" ).toggle();
+});
+
+
+
+/***************
+REPO & LIVE BTN
+***************/
+
 $("#repository1").click(function() {
 	window.open("https://github.com/sebalaini/First_Project_Treehouse.com");
 });

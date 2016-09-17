@@ -2,6 +2,16 @@
 HEADER
 ***************/
 
+#fixed_nav {
+	max-width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+	background: $dark_blue;
+	position: fixed;
+	margin-top: -16px;
+	border-bottom: 2px solid $white;
+}
+
 .header {
   margin-top: -5px;
 }
@@ -11,14 +21,12 @@ h1 {
  	font-size: 2em;
 }
 
-p {
- 	text-align: center;
- 	margin: 10px auto;
- 	padding: 10px 5%;
-}
-
 .intro {
   padding: 40px;
+}
+
+#name {
+	padding-top: 45px;
 }
 
 
@@ -28,9 +36,19 @@ NAV
 ***************/
 
 .nav {
+	display: none;
+	width: 100%;
 	text-align: center;
- 	padding: 10px;
- 	margin: 5px 0 20px;
+ 	margin: 0 auto;
+ 	margin-top: 34px;
+ 	padding-left: 0;
+ 	position: fixed;
+	background: $dark_blue;
+	border-bottom: 2px solid $white;
+}
+
+.nav a {
+	color: $white;
 }
 
 .nav ul {
