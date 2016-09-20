@@ -14,18 +14,6 @@ $("#menu").click(function() {
 OVERLAY DIV
 ***************/
 
-
-$(".project").on("mouseenter", function() {
-  $(".description").fadeIn();
-  $(".description").css("display", "block");
-});
-
-$(".project").on("mouseleave", function() {
-    $(".description").fadeOut();
-    $(".description").css("display", "none");
-    });   
-
-
 $(window).resize(function() {
 	width = $(window).width();
 		if(width < 768) {
@@ -34,22 +22,6 @@ $(window).resize(function() {
   		$(".description").css("display", "none");
 		};
 });
-
-
-/*
-$(document).ready(function(){
-$(".project").mouseover(function() {
-		$(".description" ).css("display", "inline-block");
-});
-
-$(".project").mouseout(function() {
-		$(".description" ).css("display", "none");
-	});
-$(".description").mouseover(function() {
-		$("this" ).css("display", "inline-block");
-	});
-});
-*/
 
 
 
