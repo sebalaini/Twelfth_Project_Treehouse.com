@@ -127,8 +127,10 @@ img.project {
 	}
 }
 
-.project:hover .description {
-	display: block;
+.gallery li:hover .description {
+	@include desktop {
+		display: block;
+	}
 }
 
 
