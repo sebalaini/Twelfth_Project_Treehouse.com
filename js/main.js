@@ -11,6 +11,25 @@ $("#menu").click(function() {
 
 
 /***************
+MENU BTN
+***************/
+
+/*
+$(document).ready(function(){
+$(".project").mouseover(function() {
+		$(".description" ).css("display", "inline-block");
+});
+
+$(".project").mouseout(function() {
+		$(".description" ).css("display", "none");
+	});
+$(".description").mouseover(function() {
+		$("this" ).css("display", "inline-block");
+	});
+});
+*/
+
+/***************
 REPO & LIVE BTN
 ***************/
 

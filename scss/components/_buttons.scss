@@ -3,7 +3,7 @@ BUTTON
 ***************/
 
 button {
-	display: block;
+	display: inline-block;
 	width: 160px;
 	height: 30px;
 	text-align: center;
@@ -16,8 +16,14 @@ button {
 }
 
 .repo {
-	display: none;
+	@include mobile {
+		display: none;
+	}
+	@include tablet {
+		display: inline-block;
+	}
 }
+
 
 /* button:hover {
 	background: $light_blue;
