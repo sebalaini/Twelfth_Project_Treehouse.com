@@ -11,8 +11,30 @@ $("#menu").click(function() {
 
 
 /***************
-MENU BTN
+OVERLAY DIV
 ***************/
+
+
+$(".project").on("mouseenter", function() {
+  $(".description").fadeIn();
+  $(".description").css("display", "block");
+});
+
+$(".project").on("mouseleave", function() {
+    $(".description").fadeOut();
+    $(".description").css("display", "none");
+    });   
+
+
+$(window).resize(function() {
+	width = $(window).width();
+		if(width < 768) {
+  		$(".description").css("display", "block");
+		} else {
+  		$(".description").css("display", "none");
+		};
+});
+
 
 /*
 $(document).ready(function(){
@@ -28,6 +50,8 @@ $(".description").mouseover(function() {
 	});
 });
 */
+
+
 
 /***************
 REPO & LIVE BTN
