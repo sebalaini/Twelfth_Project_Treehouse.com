@@ -37,13 +37,6 @@ ul {
   list-style-type: none;
 }
 
-.screenshot {
-  margin: 5px auto;
-  width: 100%;
-  height: 150px;
-  margin-bottom: -10px;
-}
-
 
 
 /***************
@@ -56,7 +49,9 @@ h2 {
   padding: 5px 0;
 }
 
-
+h3 {
+  text-align: center;
+}
 
 .clearfix:after {
   content: "";
