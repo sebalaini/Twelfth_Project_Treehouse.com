@@ -3,7 +3,15 @@ ABOUT
 ***************/
 
 #about {
-	margin-top: 120px;
+	@include mobile {
+		margin-top: 100px;
+	}
+	@include mobile2 {
+		margin-top: 140px;
+	}
+	@include tablet {
+		margin-top: 210px;
+	}
 }
 
 h3 {
@@ -16,7 +24,7 @@ h3 {
 PORTFOLIO
 ***************/
 
-.port_div {
+.portfolio_div {
 	background: $dark_blue;
 	margin: 0 auto;
 	width: 100%;
@@ -25,19 +33,43 @@ PORTFOLIO
 }
 
 .gallery {
- 	padding: 0;
- 	list-style: none;
+	padding: 0;
+	list-style: none;
 }
 
 .gallery li {
-	height: 460px;
-	width: 98%;
- 	margin: 5px auto;
- 	text-align: center;
+	@include mobile {
+		height: 590px;
+		width: 98%;
+	 	margin: 5px auto;
+	 	text-align: center;
+	}
+	@include tablet {
+		height: 655px;
+		width: 320px;;
+		display: inline-block;
+		margin: 0 auto;
+		float: left;
+	}
+	@include desktop {
+		height: 400px;
+	}
 }
 
 .gallery li:last-child {
-	margin-bottom: 20px;
+	@include mobile {
+		margin-bottom: 20px;
+	}
+	@include tablet {
+		margin-bottom: 30px;
+	}
+}
+
+.gallery h2 {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	color: $white;
+	font-size: 1.1em;
 }
 
 img.project {
@@ -48,16 +80,39 @@ img.project {
 	border-radius: 10px;
 }
 
-.gallery li p {
- 	margin: 0;
- 	padding: 0;
+.description {
+	@include mobile {
+		width: 100%;
+	}
+	@include tablet {
+		width: 320px;
+	}
+	@include desktop {
+		display: none;
+		position: relative;
+		top: -330px;
+		width: 290px;
+		height: 311px;
+		padding-top: 20px;
+		border-radius: 10px;
+		padding-bottom: 20px;
+		background:rgba(0,0,0,0.6)
+	}
 }
 
-.gallery h2 {
-	margin-bottom: 10px;
-	margin-top: 10px;
-	color: $white;
-	font-size: 1.1em;
+.desc_p {
+	@include mobile {
+		color: $white;
+		width: 310px;
+		margin: 0 auto;
+	}
+	@include tablet {
+		height: 150px;
+		margin-bottom: 10px;
+	}
+	@include desktop {
+		width: 290px;
+	}
 }
 
 
