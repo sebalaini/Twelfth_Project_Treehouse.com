@@ -2,12 +2,6 @@
 FOOTER
 ***************/
 
-#phone_svg,
-#mail_svg {
-	margin-bottom: -8px;
-	margin-right: 6px;
-}
-
 #social_logos {
 	text-align: center;
 	padding-left: 0;
@@ -17,11 +11,33 @@ FOOTER
 	display: inline-block;
 	width: 25px;
 	height: 25px;
-	margin: 3px;
+	margin: 5px;
+	margin-top: 20px;
+}
+
+.phone,
+.mail {
+	margin-right: 10px;
 }
 
 .foot_copy {
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 25px;
 }
+
+
+/***************
+CONTACT
+***************/
+
+#contact h2 {
+	@include mobile {
+	 	margin: 10px auto;
+	 	margin-top: 30px;
+	}
+	@include tablet {
+		margin-top: 40px;
+	}
+}
+
 

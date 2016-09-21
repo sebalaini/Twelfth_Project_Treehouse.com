@@ -8,7 +8,7 @@ MENU BTN
 		$( ".nav" ).toggle();
 	});
 
-var contentSections = $('.section');
+/* var contentSections = $('.section');
 var navigationItems = $('.nav a');
 
 	updateNavigation();
@@ -26,6 +26,6 @@ var navigationItems = $('.nav a');
 				navigationItems.eq(activeSection).removeClass('selected');
 			}
 		});
-	}
+	} */ 
 
 });
