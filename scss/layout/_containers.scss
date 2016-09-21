@@ -46,12 +46,32 @@ ABOUT
 PORTFOLIO
 ***************/
 
-.screenshot {
+.example {
   margin: 5px auto;
   width: 100%;
   height: 150px;
   margin-top: 30px;
   margin-bottom: -10px;
+}
+
+#screenshot {
+	@include mobile {
+		display: inline-block;
+	}
+	@include tablet {
+		display: none;
+	}
+}
+
+#screenshot_big {
+	@include mobile {
+		display: none;
+	}
+	@include tablet {
+		display: inline-block;
+		height: 255px;
+		border-top: 5px solid $dark_blue;
+	}
 }
 
 #portfolio {
@@ -163,25 +183,6 @@ img.project {
 	}
 }
 
-
-
-/***************
-CONTACT
-***************/
-
-#contact h2 {
-	@include mobile {
-	 	margin: 10px auto;
-	 	margin-top: 30px;
-	}
-	@include tablet {
-		margin-top: 40px;
-	}
-}
-
-p.contact {
-	margin: 0 30px;
-}
 
 
 
