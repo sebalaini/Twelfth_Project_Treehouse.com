@@ -2,6 +2,18 @@
 FOOTER
 ***************/
 
+footer {
+	@include mobile {
+		padding-top: 35px;
+		background: #fff;
+	}
+	@include desktop {
+		padding-top: 0;
+		background:#26292e;
+		color: #fff;
+	}
+}
+
 #social_logos {
 	text-align: center;
 	padding-left: 0;
@@ -25,19 +37,22 @@ FOOTER
 	margin-top: 25px;
 }
 
+svg {
+	@include mobile {
+		fill: #26292e;
+	}
+	@include desktop {
+		fill: #fff;
+	}
+}
 
 /***************
 CONTACT
 ***************/
 
 #contact h2 {
-	@include mobile {
-	 	margin: 10px auto;
-	 	margin-top: 30px;
-	}
-	@include tablet {
-		margin-top: 40px;
-	}
+ 	margin: 10px auto;
+ 	margin-top: 30px;
 }
 
 

@@ -4,13 +4,25 @@ ABOUT
 
 #about {
 	@include mobile {
-		margin-top: 100px;
+		padding-top: 100px;
+		background: white;
 	}
 	@include mobile2 {
-		margin-top: 140px;
+		padding-top: 140px;
+		margin-bottom: 0;
 	}
 	@include tablet {
-		margin-top: 210px;
+		padding-top: 210px;
+		margin-bottom: 0;
+	}
+	@include desktop {
+		background: #26292e;
+	}
+}
+
+#about h2 {
+	@include desktop {
+		color: white;
 	}
 }
 
@@ -35,8 +47,11 @@ ABOUT
 .column2 {
 	@include desktop {
 		width: 47%;
+		height: 480px;
+		border-radius: 10px;
+		background: #fff;
 		float: left;
-		margin: 0.75%;
+		margin: 1.5%;
 	}
 }
 
@@ -46,49 +61,23 @@ ABOUT
 PORTFOLIO
 ***************/
 
-.example {
-  margin: 5px auto;
-  width: 100%;
-  height: 150px;
-  margin-top: 30px;
-  margin-bottom: -10px;
-}
-
-#screenshot {
-	@include mobile {
-		display: inline-block;
-	}
-	@include tablet {
-		display: none;
-	}
-}
-
-#screenshot_big {
-	@include mobile {
-		display: none;
-	}
-	@include tablet {
-		display: inline-block;
-		height: 255px;
-		border-top: 5px solid $dark_blue;
-	}
-}
-
-#portfolio {
-	color: $white;
-}
-
 .portfolio_div {
 	background: $dark_blue;
+	color: $white;
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
 	padding-top: 20px;
 }
 
+.portfolio_div h2 {
+	margin-top: 25px;
+}
+
 .gallery {
 	@include mobile {
 		padding: 0;
+		margin: 0;
 	}
 	@include tablet {
 		margin-left: 20px;
@@ -109,7 +98,7 @@ PORTFOLIO
 		height: 655px;
 		width: 45%;
 		display: inline-block;
-		margin: 10px;
+		margin: 11px;
 		float: left;
 	}
 	@include desktop {
@@ -158,7 +147,8 @@ img.project {
 		padding-top: 20px;
 		border-radius: 10px;
 		padding-bottom: 20px;
-		background:rgba(0,0,0,0.6)
+		background:rgba(0,0,0,0.85);
+		font-size: 0.85em;
 	}
 }
 

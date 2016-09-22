@@ -7,6 +7,10 @@ GENERAL
    text-align: center;
 }
 
+body {
+  background: $dark_blue;
+}
+
 .wrapper {
   margin: 5px auto;
   max-width: 1200px;
@@ -15,6 +19,16 @@ GENERAL
 div {
   margin: 5px auto;
   width: 100%;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 5px auto;
+  padding: 5px 0;
+}
+
+h3 {
   text-align: center;
 }
 
@@ -35,22 +49,6 @@ a {
 
 ul {
   list-style-type: none;
-}
-
-
-
-/***************
-BODY
-***************/
-
-h2 {
-  text-align: center;
-  margin: 5px auto;
-  padding: 5px 0;
-}
-
-h3 {
-  text-align: center;
 }
 
 .clearfix:after {
