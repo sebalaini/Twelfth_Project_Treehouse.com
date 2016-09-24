@@ -8,6 +8,11 @@ MENU BTN
 		$( ".nav" ).fadeToggle("slow", "linear");
 	});
 
+/* $(document).on('click', function(e) {
+  if (!$(e.target).closest('.nav').length) {
+    $( ".nav" ).hide();  }
+}); */
+
 
 
 /***************
@@ -25,7 +30,6 @@ $(window).on('scroll', function() {
 function updateNavigation() {
   
   contentSections.each(function() {
-    //console.log($(this));
     $this = $(this);
     var activeSection = $('.nav a[href="#' + $this.attr("id") + '"]');
     var scrollPosition = $(window).scrollTop();
@@ -51,4 +55,8 @@ function updateNavigation() {
   });
 }
 
-});
+
+
+}); // end ready
+
+

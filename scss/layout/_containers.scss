@@ -6,14 +6,13 @@ ABOUT
 	@include mobile {
 		padding-top: 100px;
 		background: white;
+		padding-bottom: 30px;
 	}
 	@include mobile2 {
 		padding-top: 140px;
-		margin-bottom: 0;
 	}
 	@include tablet {
 		padding-top: 210px;
-		margin-bottom: 0;
 	}
 	@include desktop {
 		background: #26292e;
@@ -89,13 +88,13 @@ PORTFOLIO
 
 .gallery li {
 	@include mobile {
-		height: 590px;
+		height: 600px;
 		width: 98%;
 	 	margin: 5px auto;
 	 	text-align: center;
 	}
 	@include tablet {
-		height: 655px;
+		height: 680px;
 		width: 45%;
 		display: inline-block;
 		margin: 11px;
@@ -112,7 +111,7 @@ PORTFOLIO
 		margin-bottom: 20px;
 	}
 	@include tablet {
-		margin-bottom: 30px;
+		margin-bottom: 80px;
 	}
 }
 
@@ -127,8 +126,8 @@ PORTFOLIO
 }
 
 .gallery h2 {
-	margin-bottom: 10px;
-	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-top: 30px;
 	color: $white;
 	font-size: 1.1em;
 }
@@ -170,7 +169,7 @@ img.project {
 	  font-weight: normal;
 	}
 	@include tablet {
-		height: 150px;
+		height: 170px;
 		margin-bottom: 10px;
 	}
 	@include desktop {
