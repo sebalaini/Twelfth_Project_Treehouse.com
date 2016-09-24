@@ -8,6 +8,7 @@ HEADER
 
 h1 {
 	@include mobile {
+		font-family: "Gloria Hallelujah", sans-serif;
  		font-size: 2em;
 	}
 	@include tablet {
@@ -28,15 +29,15 @@ header p {
 
 #name {
 	@include mobile {
-		margin-top: -165px;
+		margin-top: -180px;
 		position: relative;
 		color: $white;
 	}
 	@include mobile2 {
-		margin-top: -195px;
+		margin-top: -220px;
 	}
 	@include tablet {
-		margin-top: -275px;
+		margin-top: -310px;
 	}
 }
 
