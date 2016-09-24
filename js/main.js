@@ -6,12 +6,14 @@ MENU BTN
 
 	$("#menu").click(function() {
 		$( ".nav" ).fadeToggle("slow", "linear");
+
+	$(document).click(function(event) {
+		if(!$(event.target).is('#menu')) {
+		$(".nav").hide();
+		}
 	});
 
-/* $(document).on('click', function(e) {
-  if (!$(e.target).closest('.nav').length) {
-    $( ".nav" ).hide();  }
-}); */
+});
 
 
 
