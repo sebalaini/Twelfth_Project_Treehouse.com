@@ -7,12 +7,12 @@ MENU BTN
 	$("#menu").click(function() {
 		$( ".nav" ).fadeToggle("slow", "linear");
 
-	$(document).click(function(event) {
+/*	$(document).click(function(event) {
 		if(!$(event.target).is('#menu')) {
 		$(".nav").hide();
 		}
 	});
-
+*/ 
 });
 
 
