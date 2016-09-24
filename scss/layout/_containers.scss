@@ -48,7 +48,6 @@ ABOUT
 	@include desktop {
 		width: 47%;
 		height: 480px;
-		border-radius: 10px;
 		background: #26292e;
 		color: #fff;
 		float: left;
@@ -117,6 +116,16 @@ PORTFOLIO
 	}
 }
 
+.gallery li:hover .description {
+	@include desktop {
+		opacity: 1;
+		transition: opacity .7s ease-out;
+		-webkit-transition: opacity .7s ease-out;
+    -moz-transition: opacity .7s ease-out;
+    -o-transition: opacity .7s ease-out;
+	}
+}
+
 .gallery h2 {
 	margin-bottom: 10px;
 	margin-top: 10px;
@@ -140,7 +149,7 @@ img.project {
 		width: 320px;
 	}
 	@include desktop {
-		display: none;
+		opacity: 0;
 		position: relative;
 		top: -329px;
 		width: 290px;
@@ -158,6 +167,7 @@ img.project {
 		color: $white;
 		width: 310px;
 		margin: 0 auto;
+	  font-weight: normal;
 	}
 	@include tablet {
 		height: 150px;
@@ -168,11 +178,7 @@ img.project {
 	}
 }
 
-.gallery li:hover .description {
-	@include desktop {
-		display: block;
-	}
-}
+
 
 
 
