@@ -4,8 +4,8 @@ ABOUT
 
 #about {
 	@include mobile {
-		padding-top: 100px;
 		background: white;
+		padding-top: 82px;
 		padding-bottom: 30px;
 	}
 	@include mobile2 {
@@ -17,20 +17,6 @@ ABOUT
 	@include desktop {
 		background: #26292e;
 	}
-}
-
-#about h2 {
-	@include desktop {
-		color: white;
-	}
-}
-
-.pic_photo {
-	display: block;
-	margin: 35px auto;
-	width: 150px;
-	height: 150px;
-	border-radius: 100%;
 }
 
 #about p {
@@ -67,10 +53,6 @@ PORTFOLIO
 	width: 100%;
 	text-align: center;
 	padding-top: 20px;
-}
-
-.portfolio_div h2 {
-	margin: 50px auto;
 }
 
 .gallery {

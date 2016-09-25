@@ -23,9 +23,14 @@ div {
 }
 
 h2 {
-  text-align: center;
-  margin: 5px auto;
-  padding: 5px 0;
+  @include mobile {
+    text-align: center;
+    margin: 50px auto;
+    padding: 5px 0;
+  }
+  @include desktop {
+    color: #fff;
+  }
 }
 
 h3 {

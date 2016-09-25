@@ -14,9 +14,34 @@ footer {
 	}
 }
 
+#contact  {
+	h2 {
+ 		margin: 40px auto;
+	}
+	p {
+		margin-top: 30px;
+	}
+}
+
+.cont_photo {
+	@include mobile {
+		max-width: 1200px;
+		height: 300px;
+		background: url("../img/cont_small.jpg") center no-repeat;
+		margin-bottom: 25px;
+	}
+	@include desktop {
+		height: 400px;
+		background: url("../img/cont_big.jpg") center no-repeat;
+		margin-bottom: 40px;
+	}
+}
+
+
 #social_logos {
 	text-align: center;
 	padding-left: 0;
+	margin-bottom: 40px;
 }
 
 #social_logos li {
@@ -46,12 +71,7 @@ svg {
 	}
 }
 
-/***************
-CONTACT
-***************/
 
-#contact h2 {
- 	margin: 40px auto;
-}
+
 
 
