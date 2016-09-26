@@ -5,14 +5,8 @@ ABOUT
 #about {
 	@include mobile {
 		background: white;
-		padding-top: 82px;
+		padding-top: 50px;
 		padding-bottom: 30px;
-	}
-	@include mobile2 {
-		padding-top: 140px;
-	}
-	@include tablet {
-		padding-top: 210px;
 	}
 	@include desktop {
 		background: #26292e;
